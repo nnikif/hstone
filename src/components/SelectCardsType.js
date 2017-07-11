@@ -12,7 +12,7 @@ class SelectCardsType extends Component {
   }
   render(){
 
-    return(
+    return(<div className="filters">
       <select onChange={this.renderClass.bind(this)} name="class">
         <option value="Druid">Druid</option>
         <option value="Hunter">Hunter</option>
@@ -25,7 +25,7 @@ class SelectCardsType extends Component {
         <option value="Shaman">Shaman</option>
         <option value="Warlock">Warlock</option>
         <option value="Warrior">Warrior</option>
-      </select>
+      </select></div>
     )
   }
 }

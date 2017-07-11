@@ -9,3 +9,16 @@ body {
 .eightcards{
   width: 1000px;
 }
+
+.filters {
+  /*text-align:center;*/
+  /*border: 1px solid rgb(0,0,0);*/
+  /*width:20px;*/
+  /*height:20px;*/
+  float: left;
+  padding: 10px;
+}
+.filter-footer{
+  clear: left;
+  height: 0;
+}

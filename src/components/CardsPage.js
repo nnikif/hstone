@@ -6,6 +6,7 @@ import Card from './Card';
 import SelectCardsType from './SelectCardsType';
 import {connect} from 'react-redux';
 import {changeShift} from '../actions'
+import ManaFilter from './ManaFilter'
 
 class CardsPage extends Component {
 
@@ -23,8 +24,10 @@ class CardsPage extends Component {
   }
   render(){
     return (
-      <div>
+      <div><div>
         <SelectCardsType/>
+        <ManaFilter/></div>
+        <div className="filter-footer"></div>
         <div className="eightcards">
         {this.renderCards(this.props.shift)}
 

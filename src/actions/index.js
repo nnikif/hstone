@@ -4,13 +4,14 @@
 import axios from 'axios';
 export const LOAD_CARDS='load_cards';
 export const CHANGE_SHIFT='change_shift'
+export const MANA_FILTER='mana_filter'
 
 const ROOT_URL= "https://omgvamp-hearthstone-v1.p.mashape.com/cards/classes/";
 const AXIOS_CONFIG = {headers: {"X-Mashape-Key": "Ydtx08KSgqmshZYxyUlxzPfGEOaLp1O7tmUjsnmH6D7WwGjQEV"}}
 
 export function loadCards(card_class) {
   const request=axios.get(`${ROOT_URL}${card_class}`, AXIOS_CONFIG)
-  console.log(request)
+  // console.log(request)
 
   return{
     type: LOAD_CARDS,
@@ -22,5 +23,12 @@ export function changeShift(delta){
   return{
     type: CHANGE_SHIFT,
     payload: {delta}
+  }
+}
+
+export function manaFilter(mana){
+  return{
+    type: MANA_FILTER,
+    payload: mana
   }
 }

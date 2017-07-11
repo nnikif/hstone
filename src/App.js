@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import _ from 'lodash'
-import { EightCards, some_mage} from './data/cards'
+
 import CardsPage from './components/CardsPage'
 import {loadCards} from './actions'
 import {connect} from 'react-redux'
+
 
 class App extends Component {
   componentDidMount(){
@@ -25,7 +25,7 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-  return {cards: state.cards }
+  return {cards: state.cards.filtered }
 
 }
 

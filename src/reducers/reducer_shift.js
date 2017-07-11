@@ -1,7 +1,7 @@
 /**
  * Created by nikolaynikiforov on 11/07/2017.
  */
-import {CHANGE_SHIFT, LOAD_CARDS} from '../actions'
+import {CHANGE_SHIFT, LOAD_CARDS, MANA_FILTER} from '../actions'
 
 export default function (state=0, action){
   switch (action.type) {
@@ -13,6 +13,9 @@ export default function (state=0, action){
       return state;
     }
     case LOAD_CARDS:
+      return 0;
+
+    case MANA_FILTER:
       return 0;
 
     default:
