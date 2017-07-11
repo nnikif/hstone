@@ -15,11 +15,22 @@ class ManaFilter extends Component {
   }
   render() {
     return(
-      <div className="filters">Mana:<select onChange={this.updateFilter.bind(this)} name="mana">
+      <div className="filters">Mana:<select value={this.props.mana} onChange={this.updateFilter.bind(this)} name="mana">
         {this.renderOptions()}
       </select></div>
     )
   }
 }
+function mapStateToProps(state) {
+  if (!state.cards.mana){
+    return {mana:0}
+  }
+  console.log("Hi!")
+  return {
+    mana: state.cards.mana
+  }
 
-export default connect(null, {manaFilter})(ManaFilter);
+}
+
+
+export default connect(mapStateToProps, {manaFilter})(ManaFilter);
