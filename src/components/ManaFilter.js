@@ -25,7 +25,6 @@ function mapStateToProps(state) {
   if (!state.cards.mana){
     return {mana:0}
   }
-  console.log("Hi!")
   return {
     mana: state.cards.mana
   }
