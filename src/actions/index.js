@@ -22,7 +22,7 @@ export function loadCards(card_class) {
 export function changeShift(delta){
   return{
     type: CHANGE_SHIFT,
-    payload: {delta}
+    payload: delta
   }
 }
 

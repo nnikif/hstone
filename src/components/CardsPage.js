@@ -42,7 +42,7 @@ class CardsPage extends Component {
 }
 
 function mapStateToProps(state) {
-  return {shift: state.shift}
+  return {shift: state.cards.shift}
 }
 
 
