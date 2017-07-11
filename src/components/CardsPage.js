@@ -12,11 +12,9 @@ class CardsPage extends Component {
   nextCards(){
     this.props.changeShift(8);
 
-    // this.setState({shift: this.state.shift+8})
   }
   prevCards (){
     this.props.changeShift(-8);
-  // console.log("Hi")
   }
 
   renderCards(start){

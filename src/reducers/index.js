@@ -8,6 +8,7 @@ import ShiftReducer from './reducer_shift'
 const rootReducer = combineReducers({
   cards: CardsReducer,
   shift: ShiftReducer
+
   }
 )
 

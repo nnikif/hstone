@@ -8,7 +8,7 @@ import _ from 'lodash';
 export default function (state=[], action) {
   switch (action.type) {
     case LOAD_CARDS:
-      return  _.reject(action.payload.data, (card) => !card.img || card.type==="Hero")
+      return  _.reject(action.payload.data, (card) => !card.img || card.type==="Hero"|| !card.collectible)
 
     default:
       return state;
