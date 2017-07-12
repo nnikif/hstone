@@ -17,6 +17,7 @@ body {
   /*height:20px;*/
   float: left;
   padding: 10px;
+  padding-top: 10px;
 }
 .filter-footer{
   clear: left;

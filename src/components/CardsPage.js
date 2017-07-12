@@ -9,6 +9,7 @@ import {changeShift} from '../actions';
 import ManaFilter from './ManaFilter';
 import RaceFilter from './RaceFilter'
 import DetailFilter from './DetailFilter'
+import RarityFilter from './RarityFilter'
 
 class CardsPage extends Component {
 
@@ -28,7 +29,9 @@ class CardsPage extends Component {
     return (
       <div><div>
         <SelectCardsType/>
+        <RarityFilter/>
         <ManaFilter/>
+
         <RaceFilter/>
         <DetailFilter/>
       </div>
