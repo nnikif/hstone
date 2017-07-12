@@ -10,6 +10,7 @@ import ManaFilter from './ManaFilter';
 import RaceFilter from './RaceFilter'
 import DetailFilter from './DetailFilter'
 import RarityFilter from './RarityFilter'
+import TitleFilter from './TitleFilter'
 
 class CardsPage extends Component {
 
@@ -34,6 +35,7 @@ class CardsPage extends Component {
 
         <RaceFilter/>
         <DetailFilter/>
+        <TitleFilter/>
       </div>
         <div className="filter-footer"></div>
         <div className="eightcards">

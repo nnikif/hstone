@@ -7,8 +7,9 @@ export const CHANGE_SHIFT='change_shift';
 export const MANA_FILTER='mana_filter';
 export const USE_FILTERS='use_filters';
 export const SET_RACE='set_race';
-export const SET_DETAIL='set_detail'
-export const SET_RARITY='set_rarity'
+export const SET_DETAIL='set_detail';
+export const SET_RARITY='set_rarity';
+export const SET_TITLE='set_title';
 
 const ROOT_URL= "https://omgvamp-hearthstone-v1.p.mashape.com/cards/classes/";
 const AXIOS_CONFIG = {headers: {"X-Mashape-Key": "Ydtx08KSgqmshZYxyUlxzPfGEOaLp1O7tmUjsnmH6D7WwGjQEV"}}
@@ -65,6 +66,13 @@ export function updateRarity(rarity) {
   return {
     type: SET_RARITY,
     payload: rarity
+  }
+
+}
+export function setTitle(title) {
+  return{
+    type: SET_TITLE,
+    payload:title
   }
 
 }
