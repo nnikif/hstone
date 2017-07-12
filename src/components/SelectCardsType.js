@@ -8,7 +8,8 @@ import {connect} from 'react-redux';
 
 class SelectCardsType extends Component {
   renderClass(event){
-    this.props.loadCards(event.target.value)
+    this.props.loadCards(event.target.value);
+    // this.props.useFilters();
   }
   render(){
 

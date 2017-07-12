@@ -3,9 +3,11 @@
  */
 import axios from 'axios';
 export const LOAD_CARDS='load_cards';
-export const CHANGE_SHIFT='change_shift'
-export const MANA_FILTER='mana_filter'
-export const USE_FILTERS='use_filters'
+export const CHANGE_SHIFT='change_shift';
+export const MANA_FILTER='mana_filter';
+export const USE_FILTERS='use_filters';
+export const SET_RACE='set_race';
+export const SET_DETAIL='set_detail'
 
 const ROOT_URL= "https://omgvamp-hearthstone-v1.p.mashape.com/cards/classes/";
 const AXIOS_CONFIG = {headers: {"X-Mashape-Key": "Ydtx08KSgqmshZYxyUlxzPfGEOaLp1O7tmUjsnmH6D7WwGjQEV"}}
@@ -37,5 +39,18 @@ export function manaFilter(mana){
 export function useFilters(){
   return {
     type: USE_FILTERS
+  }
+}
+
+export function setRace (race){
+  return{
+    type: SET_RACE,
+    payload:race
+  }
+}
+export function setDetail (detail){
+  return{
+    type: SET_DETAIL,
+    payload:detail
   }
 }

@@ -5,8 +5,10 @@ import React, {Component} from "react";
 import Card from './Card';
 import SelectCardsType from './SelectCardsType';
 import {connect} from 'react-redux';
-import {changeShift} from '../actions'
-import ManaFilter from './ManaFilter'
+import {changeShift} from '../actions';
+import ManaFilter from './ManaFilter';
+import RaceFilter from './RaceFilter'
+import DetailFilter from './DetailFilter'
 
 class CardsPage extends Component {
 
@@ -26,7 +28,10 @@ class CardsPage extends Component {
     return (
       <div><div>
         <SelectCardsType/>
-        <ManaFilter/></div>
+        <ManaFilter/>
+        <RaceFilter/>
+        <DetailFilter/>
+      </div>
         <div className="filter-footer"></div>
         <div className="eightcards">
         {this.renderCards(this.props.shift)}
