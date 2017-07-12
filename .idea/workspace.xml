@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5dbc116-450e-4a35-814c-56c565383530" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/DetailFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/RaceFilter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Card.js" afterPath="$PROJECT_DIR$/src/components/Card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CardsPage.js" afterPath="$PROJECT_DIR$/src/components/CardsPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/SelectCardsType.js" afterPath="$PROJECT_DIR$/src/components/SelectCardsType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/reducer_cards.js" afterPath="$PROJECT_DIR$/src/reducers/reducer_cards.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,8 +56,8 @@
       <file leaf-file-name="Card.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -432,12 +425,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499692162478</updated>
-      <workItem from="1499692165263" duration="38229000" />
+      <workItem from="1499692165263" duration="38486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38229000" />
+    <option name="totallyTimeSpent" value="38486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="743" y="366" width="1363" height="993" extended-state="0" />
@@ -666,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding />
         </state>
       </provider>

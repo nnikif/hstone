@@ -16,7 +16,7 @@ import React, {Component} from 'react'
 class Card extends Component {
   render(){
     return(
-    <div><img width="250" height="379" src={this.props.card.img} alt={this.props.card.name}/></div>
+    <div><img width="225" height="340" src={this.props.card.img} alt={this.props.card.name}/></div>
     )
   }
 }
