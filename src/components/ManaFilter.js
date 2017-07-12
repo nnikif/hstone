@@ -3,11 +3,12 @@
  */
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {manaFilter} from '../actions'
+import {manaFilter, useFilters} from '../actions'
 
 class ManaFilter extends Component {
   updateFilter(event){
     this.props.manaFilter(event.target.value)
+    this.props.useFilters()
   }
   renderOptions(){
     const mana_choices=[...Array(11).keys()]
@@ -32,4 +33,4 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps, {manaFilter})(ManaFilter);
+export default connect(mapStateToProps, {manaFilter, useFilters})(ManaFilter);
