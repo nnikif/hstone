@@ -13,14 +13,19 @@ export const SET_RARITY='set_rarity'
 const ROOT_URL= "https://omgvamp-hearthstone-v1.p.mashape.com/cards/classes/";
 const AXIOS_CONFIG = {headers: {"X-Mashape-Key": "Ydtx08KSgqmshZYxyUlxzPfGEOaLp1O7tmUjsnmH6D7WwGjQEV"}}
 
-export function loadCards(card_class) {
-  const request=axios.get(`${ROOT_URL}${card_class}`, AXIOS_CONFIG)
-  // console.log(request)
 
-  return{
-    type: LOAD_CARDS,
-    payload: request
+export function loadCards(card_class) {
+  return (dispatch) =>{
+    const request=axios.get(`${ROOT_URL}${card_class}`, AXIOS_CONFIG)
+    dispatch({
+      type:LOAD_CARDS,
+      payload:request
+    })
+      .then (()=>dispatch({
+      type: USE_FILTERS
+    }))
   }
+
 }
 
 export function changeShift(delta){

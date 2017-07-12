@@ -14,7 +14,7 @@ class RarityFilter extends Component{
   render(){
     return(
       <div className="filters">
-      <select onChange={this.changeRarity.bind(this)} name="Rarity">
+      <select value={this.props.rarity} onChange={this.changeRarity.bind(this)} name="Rarity">
         <option value="Any">Any</option>
         <option value="Free">Free</option>
         <option value="Common">Common</option>
@@ -24,7 +24,13 @@ class RarityFilter extends Component{
 
       </select></div>
     )
-  }
-}
+  }}
 
-export default connect(null, {useFilters,updateRarity})(RarityFilter);
+  function mapStateToProps(state) {
+  return{
+    rarity: state.rarity
+  }
+
+  }
+
+export default connect(mapStateToProps, {useFilters,updateRarity})(RarityFilter);

@@ -10,7 +10,7 @@ export default function (state=INIT_STATE, action) {
   switch (action.type) {
     case LOAD_CARDS:
       const collectible_cards=_.reject(action.payload.data, (card) => !card.img || card.type==="Hero"|| !card.collectible)
-      return  {...state, "data": collectible_cards, "filtered":collectible_cards, "mana":0, "shift":0}
+      return  {...state, "data": collectible_cards, "filtered":collectible_cards, "shift":0}
 
     case MANA_FILTER:
       return {...state,"mana":action.payload}
